@@ -1,0 +1,66 @@
+# 1. Create a program to create two classes
+
+# 1.1. Create a constructor and a method for each class
+class ClassA:
+    def __init__(self, name):
+        self.name = name  # Constructor initializes the name attribute
+
+    def greet(self):
+        print(f"Hello from ClassA! My name is {self.name}")
+
+class ClassB:
+    def __init__(self, value):
+        self.value = value  # Constructor initializes the value attribute
+
+    def show(self):
+        print(f"Value in ClassB is {self.value}")
+
+# 1.2. Create a __init__.py for adding all packages
+# This is just a conceptual representation since we cannot actually create files here
+# Assume __init__.py files would be placed in directories as follows:
+# package_a/
+#     __init__.py
+#     module_a.py
+# package_b/
+#     __init__.py
+#     module_b.py
+
+# 1.3. Import the respective packages
+# Simulating imports in a single file
+
+# Assume module_a.py contains the following:
+# from package_a.module_a import ClassA
+# Assume module_b.py contains the following:
+# from package_b.module_b import ClassB
+
+# 1.4. Call each class by creating an object of it
+
+# Instances of ClassA and ClassB
+obj_a = ClassA("Alice")
+obj_b = ClassB(42)
+
+# Call methods of each class
+print("Calling methods of ClassA and ClassB:")
+obj_a.greet()  # Output: Hello from ClassA! My name is Alice
+obj_b.show()   # Output: Value in ClassB is 42
+
+# 1.5. Create a program by all the above
+
+# Note: The code structure above simulates the package and module concept.
+# In practice, these would be in separate files with appropriate imports.
+
+# Simulating the behavior of a package structure in a single file
+class MainProgram:
+    def run(self):
+        # Create instances
+        obj_a = ClassA("Alice")
+        obj_b = ClassB(42)
+
+        # Call methods
+        print("Calling methods from MainProgram:")
+        obj_a.greet()
+        obj_b.show()
+
+# Create an instance of MainProgram and run it
+main_program = MainProgram()
+main_program.run()
